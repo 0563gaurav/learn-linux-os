@@ -1,0 +1,7 @@
+To install the Telegram Desktop. Execute the command below on your Terminal.
+
+sudo snap install telegram-desktop
+
+Now, let’s run Telegram with the command below.
+
+snap run telegram-desktop

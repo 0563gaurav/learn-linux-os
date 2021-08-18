@@ -1,0 +1,18 @@
+To install Snap on Kali Linux, we will go the command-line way. Let’ get started.
+
+Step 1. Launch the Terminal from the applications menu. Alternatively, you can use the (Ctrl + Alt + T) keyboard shortcut.
+Step 2. Execute the apt update command to ensure all system packages are up-to-date with the latest versions.
+
+sudo apt update
+
+Step 3. Install the REST API daemon used for managing Snap packages and applications – Snapd.
+
+sudo apt install snapd
+
+Step 4. Once snapd installs successfully, we will need to start and enable the snapd and the snapd.AppArmor services. Execute the command below on your Kali Terminal. Please note, you might be required to enter your root password because starting some of these services require sudo privileges.
+
+systemctl enable --now snapd apparmor
+
+Now restart your Kali system or logout and login back in again to updated the snap paths. To check whether Snap is successfully installed, run the version command below:
+
+snap --version
