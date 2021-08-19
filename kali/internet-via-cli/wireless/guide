@@ -1,0 +1,31 @@
+/* first way */
+
+1. If you know the ESSID of the Wi-Fi network you wish to connect to, move to the next step, otherwise issue the command below to scan available Wi-Fi networks again.
+
+$ sudo iw wlp1s0 scan
+
+2. And lastly, connect to the wi-fi network using following command, where gaurav (Wi-Fi network SSID) and Gaurav@0563 (password/pre-shared key).
+
+$ nmcli dev wifi connect gaurav password Gaurav@0563
+
+
+
+
+/* second way */
+
+1. To list all the network interface 
+
+$ sudo ip link show 
+
+2. To connect the internet 
+
+$ sudo ip link set  <interface-name> up 
+
+3. To disconnect the internet 
+
+$sudo ip link set <interface-name> down
+
+
+/* Third way */
+ 
+
