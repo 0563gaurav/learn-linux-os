@@ -1,0 +1,1 @@
+NOTE: Identified as a "tmpfs"(temporary filesystem ) , we know that the files and dirctories in /run are not stored on disk  but only in vloatile memory . they represent data kept in memory( os disk-based swap) that takes the appreances of mounted file system to allow it be more accessible  and eiser to manage.
