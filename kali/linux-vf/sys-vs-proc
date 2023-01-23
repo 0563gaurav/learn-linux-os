@@ -1,4 +1,0 @@
-*Roughly, /proc exposes process information and general kernel data structure to the user-space.
-*/sys exposes kernel data structure that describes hardware ( but also filesystem SElinux, modules etc).
-* There is no sharp distinction between /proc and /sys , definitly there is some overlap.
-
